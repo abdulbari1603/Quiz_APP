@@ -23,6 +23,30 @@
       "score": 0,
       "totalQuestions": 1,
       "submittedAt": "2025-03-05T20:46:44.168Z"
+    },
+    {
+      "id": "36c3f99b93a6b57f",
+      "quizId": "b65aa6bb67735f17",
+      "quizTitle": "New Quiz",
+      "studentName": "f",
+      "score": 1,
+      "totalQuestions": 2,
+      "percentage": 50,
+      "questionResults": [
+        {
+          "questionText": "What is your favorite color?",
+          "userAnswer": "Blue",
+          "correctAnswer": "Blue",
+          "isCorrect": true
+        },
+        {
+          "questionText": "dd",
+          "userAnswer": "c",
+          "correctAnswer": "c",
+          "isCorrect": false
+        }
+      ],
+      "submittedAt": "2025-03-07T22:11:56.200Z"
     }
   ]
 }
