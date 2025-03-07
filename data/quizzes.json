@@ -1,0 +1,21 @@
+{
+  "quizzes": [
+    {
+      "id": "1741363589385",
+      "title": "test",
+      "questions": [
+        {
+          "text": "555",
+          "options": [
+            "w",
+            "r",
+            "tg",
+            "g"
+          ],
+          "correctOption": 3
+        }
+      ],
+      "createdAt": "2025-03-07T16:06:29.386Z"
+    }
+  ]
+}
