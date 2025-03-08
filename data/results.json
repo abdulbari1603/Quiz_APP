@@ -25,22 +25,28 @@
       "submittedAt": "2025-03-05T20:46:44.168Z"
     },
     {
-      "id": "bbab55fd6911efb4",
-      "quizId": "2aa2a428320a87f4",
-      "quizTitle": " new quiz",
-      "studentName": "taimoor",
-      "score": 1,
-      "totalQuestions": 1,
+      "id": "ce2d49c5ebb97da7",
+      "quizId": "b65aa6bb67735f17",
+      "quizTitle": "New Quiz",
+      "studentName": "d",
+      "score": 2,
+      "totalQuestions": 2,
       "percentage": 100,
       "questionResults": [
         {
-          "questionText": "What is apple Color ?",
-          "userAnswer": "red",
-          "correctAnswer": "red",
+          "questionText": "What is your favorite color?",
+          "userAnswer": "Blue",
+          "correctAnswer": "Blue",
+          "isCorrect": true
+        },
+        {
+          "questionText": "dd",
+          "userAnswer": "c",
+          "correctAnswer": "c",
           "isCorrect": true
         }
       ],
-      "submittedAt": "2025-03-07T22:50:47.336Z"
+      "submittedAt": "2025-03-08T06:32:07.944Z"
     }
   ]
 }
