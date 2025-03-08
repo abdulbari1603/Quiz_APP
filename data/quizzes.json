@@ -1,32 +1,108 @@
 {
   "quizzes": [
     {
-      "id": "2aa2a428320a87f4",
-      "title": " new quiz",
+      "id": "50eaf63c3c3ff76c",
+      "title": "New Quiz",
       "questions": [
         {
-          "text": "What is apple Color ?",
+          "text": "What is your favorite color?",
           "options": [
-            "red",
-            "green",
-            "blue",
-            "black"
-          ],
-          "correctOption": 0
-        },
-        {
-          "text": "What is apple Color ?",
-          "options": [
-            "1",
-            "d",
-            "g",
-            "c"
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
           ],
           "correctOption": 1
         }
       ],
-      "createdAt": "2025-03-07T22:50:33.266Z",
-      "updatedAt": "2025-03-07T22:51:27.399Z"
+      "createdAt": "2025-03-08T06:48:14.960Z",
+      "updatedAt": "2025-03-08T06:48:14.960Z"
+    },
+    {
+      "id": "332c692336aa7e9e",
+      "title": "New Quiz",
+      "questions": [
+        {
+          "text": "What is your favorite color?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdAt": "2025-03-08T06:48:15.003Z",
+      "updatedAt": "2025-03-08T06:48:15.003Z"
+    },
+    {
+      "id": "1927a542541c71f3",
+      "title": "Updated Quiz",
+      "questions": [
+        {
+          "text": "Updated Question?",
+          "options": [
+            "Option 1",
+            "Option 2"
+          ],
+          "correctOption": 0
+        }
+      ],
+      "createdAt": "2025-03-08T06:48:15.051Z",
+      "updatedAt": "2025-03-08T06:48:15.074Z"
+    },
+    {
+      "id": "c48cc57cf3f3e162",
+      "title": "New Quiz",
+      "questions": [
+        {
+          "text": "What is your favorite color?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdAt": "2025-03-08T06:48:28.299Z",
+      "updatedAt": "2025-03-08T06:48:28.299Z"
+    },
+    {
+      "id": "46f3bb8183bb9474",
+      "title": "New Quiz",
+      "questions": [
+        {
+          "text": "What is your favorite color?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdAt": "2025-03-08T06:48:28.329Z",
+      "updatedAt": "2025-03-08T06:48:28.329Z"
+    },
+    {
+      "id": "64d35a389f194295",
+      "title": "Updated Quiz",
+      "questions": [
+        {
+          "text": "Updated Question?",
+          "options": [
+            "Option 1",
+            "Option 2"
+          ],
+          "correctOption": 0
+        }
+      ],
+      "createdAt": "2025-03-08T06:48:28.383Z",
+      "updatedAt": "2025-03-08T06:48:28.414Z"
     }
   ]
 }
