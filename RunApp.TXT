@@ -1,0 +1,6 @@
+HOW to Run This APP
+1- Install Node JS 18 ON your System.
+2- Clone this repo : https://github.com/abdulbari1603/Quiz_APP.git
+3- open Quiz_App Directory in CMD and Run : (npm Install) incmd
+4- Run : (npm start) in cmd
+5- Click cmd localhost link and enjoy the app
