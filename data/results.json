@@ -47,6 +47,24 @@
         }
       ],
       "submittedAt": "2025-03-08T06:32:07.944Z"
+    },
+    {
+      "id": "eb9a2abaadf76edc",
+      "quizId": "c48cc57cf3f3e162",
+      "quizTitle": "New Quiz",
+      "studentName": "f",
+      "score": 1,
+      "totalQuestions": 1,
+      "percentage": 100,
+      "questionResults": [
+        {
+          "questionText": "What is your favorite color?",
+          "userAnswer": "Green",
+          "correctAnswer": "Green",
+          "isCorrect": true
+        }
+      ],
+      "submittedAt": "2025-03-09T15:46:33.337Z"
     }
   ]
 }
