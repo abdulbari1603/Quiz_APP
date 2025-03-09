@@ -28,7 +28,7 @@ jobs:
           npm install -g mocha
 
       - name: Run Backend Tests
-        run: npm tes
+        run: npm test
         env:
           NODE_OPTIONS: --experimental-vm-modules
 
