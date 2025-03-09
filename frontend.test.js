@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 
 describe('Quiz App Frontend Tests', () => {
     beforeEach(() => {
-        // Set up our document body
+        
         document.body.innerHTML = `
             <div id="root">
                 <h1>Welcome to the Quiz App</h1>

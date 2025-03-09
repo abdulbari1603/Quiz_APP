@@ -21,10 +21,10 @@ describe('Quiz API Tests', () => {
 
     it('POST /api/questions/answer should validate answer', async () => {
         const questionRes = await request(app).get('/api/questions/current');
-        const correctOption = questionRes.body.correctOption; // Ensure this is correctly defined
+        const correctOption = questionRes.body.correctOption; 
         const answerRes = await request(app)
             .post('/api/questions/answer')
-            .send({ selectedOption: correctOption }); // Use the correct option
+            .send({ selectedOption: correctOption });
     
         chai.expect(answerRes.status).to.equal(200);
         chai.expect(answerRes.body).to.have.property('correct', true);
@@ -44,7 +44,7 @@ describe('Quiz API Tests', () => {
         const response = await request(app)
             .post('/api/quizzes')
             .send(newQuiz);
-        const quizId = response.body.id; // Ensure the quiz is created successfully
+        const quizId = response.body.id; 
         const getResponse = await request(app)
             .get(`/api/quizzes/${quizId}`);
         chai.expect(getResponse.status).to.equal(200);

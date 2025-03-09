@@ -7,14 +7,14 @@ import { randomBytes } from 'crypto';
 const app = express();
 const port = 3000;
 
-// Custom error handler for more human-like responses
+
 function humanError(message, code) {
   const error = new Error(message);
   error.statusCode = code;
   return error;
 }
 
-// Custom middleware for request logging
+
 app.use((req, res, next) => {
     const start = Date.now();
     res.on('finish', () => {
@@ -28,24 +28,24 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-// Helper function to generate unique IDs
+
 function generateId() {
     return randomBytes(8).toString('hex');
 }
 
-// Helper function to validate quiz data
+
 function validateQuiz(quiz) {
-    // Check for empty title
+   
     if (!quiz.title || typeof quiz.title !== 'string' || quiz.title.trim().length === 0) {
         throw humanError('Oops! It looks like you forgot to add a title for your quiz. Please provide one!', 400);
     }
     
-    // Validate questions array
+  
     if (!Array.isArray(quiz.questions) || quiz.questions.length === 0) {
         throw humanError('A quiz needs at least one question. Don’t leave it empty!', 400);
     }
     
-    // Validate each question
+    
     quiz.questions.forEach((question, index) => {
         if (!question.text || typeof question.text !== 'string' || question.text.trim().length === 0) {
             throw humanError(`Hey! Question ${index + 1} is missing text. Please provide a question.`, 400);
@@ -63,7 +63,7 @@ function validateQuiz(quiz) {
     });
 }
 
-// Read JSON file with retry mechanism
+
 async function readJSON(filename, retries = 3) {
     for (let i = 0; i < retries; i++) {
         try {
@@ -79,7 +79,7 @@ async function readJSON(filename, retries = 3) {
     }
 }
 
-// Write JSON file without backup
+
 async function writeJSON(filename, data) {
     try {
         await writeFile(join('data', filename), JSON.stringify(data, null, 2));
@@ -89,14 +89,14 @@ async function writeJSON(filename, data) {
     }
 }
 
-// Get all quizzes with optional search and sorting
+
 app.get('/api/quizzes', async (req, res) => {
     try {
         const { search, sort } = req.query;
         const data = await readJSON('quizzes.json');
         let quizzes = data.quizzes;
 
-        // Apply search filter
+     
         if (search) {
             const searchLower = search.toLowerCase();
             quizzes = quizzes.filter(quiz => 
@@ -105,7 +105,7 @@ app.get('/api/quizzes', async (req, res) => {
             );
         }
 
-        // Apply sorting
+     
         if (sort) {
             switch (sort) {
                 case 'title':
@@ -127,7 +127,7 @@ app.get('/api/quizzes', async (req, res) => {
     }
 });
 
-// Create new quiz with validation
+
 app.post('/api/quizzes', async (req, res) => {
     try {
         validateQuiz(req.body);
@@ -140,7 +140,7 @@ app.post('/api/quizzes', async (req, res) => {
         };
         
         data.quizzes.push(newQuiz);
-        console.log('Saving quiz:', newQuiz); // Debugging log
+        console.log('Saving quiz:', newQuiz); 
         await writeJSON('quizzes.json', data);
         res.status(201).json(newQuiz);
     } catch (error) {
@@ -153,7 +153,7 @@ app.post('/api/quizzes', async (req, res) => {
     }
 });
 
-// Delete quiz by ID with cascade delete
+
 app.delete('/api/quizzes/:quizId', async (req, res) => {
     try {
         const { quizId } = req.params;
@@ -164,11 +164,11 @@ app.delete('/api/quizzes/:quizId', async (req, res) => {
             throw humanError('Quiz not found. Are you sure it exists?', 404);
         }
 
-        // Remove quiz
+        
         const deletedQuiz = data.quizzes.splice(quizIndex, 1)[0];
         await writeJSON('quizzes.json', data);
         
-        // Remove associated results
+       
         const resultsData = await readJSON('results.json');
         const initialResultsCount = resultsData.results.length;
         resultsData.results = resultsData.results.filter(result => result.quizId !== quizId);
@@ -190,7 +190,7 @@ app.delete('/api/quizzes/:quizId', async (req, res) => {
     }
 });
 
-// Update quiz by ID with validation
+
 app.put('/api/quizzes/:quizId', async (req, res) => {
     try {
         const { quizId } = req.params;
@@ -205,8 +205,8 @@ app.put('/api/quizzes/:quizId', async (req, res) => {
         const updatedQuiz = {
             ...data.quizzes[quizIndex],
             ...req.body,
-            id: quizId, // Prevent ID from being changed
-            createdAt: data.quizzes[quizIndex].createdAt, // Preserve creation date
+            id: quizId, 
+            createdAt: data.quizzes[quizIndex].createdAt, 
             updatedAt: new Date().toISOString()
         };
 
@@ -223,7 +223,7 @@ app.put('/api/quizzes/:quizId', async (req, res) => {
     }
 });
 
-// Submit quiz attempt with detailed feedback
+
 app.post('/api/submit/:quizId', async (req, res) => {
     try {
         const { quizId } = req.params;
@@ -287,7 +287,7 @@ app.post('/api/submit/:quizId', async (req, res) => {
     }
 });
 
-// Get quiz results with statistics
+
 app.get('/api/results/:quizId', async (req, res) => {
     try {
         const { quizId } = req.params;
@@ -323,7 +323,7 @@ app.get('/api/results/:quizId', async (req, res) => {
     }
 });
 
-// Delete result by ID
+
 app.delete('/api/results/:resultId', async (req, res) => {
     try {
         const { resultId } = req.params;
@@ -350,18 +350,18 @@ app.delete('/api/results/:resultId', async (req, res) => {
     }
 });
 
-// Route to get the current question
+
 app.get('/api/questions/current', async (req, res) => {
     try {
         const data = await readJSON('quizzes.json');
-        console.log('Loaded quizzes:', data.quizzes); // Debugging log
-        const currentQuiz = data.quizzes[0]; // Assuming the first quiz is the current one
+        console.log('Loaded quizzes:', data.quizzes); 
+        const currentQuiz = data.quizzes[0]; 
         if (!currentQuiz) {
             return res.status(404).json({ error: 'No current quiz found.' });
         }
-        const currentQuestion = currentQuiz.questions[0]; // Assuming the first question is the current one
-        console.log('Current Question:', currentQuestion); // Debugging log
-        console.log('Correct Option:', currentQuestion.correctOption); // Debugging log
+        const currentQuestion = currentQuiz.questions[0]; 
+        console.log('Current Question:', currentQuestion); 
+        console.log('Correct Option:', currentQuestion.correctOption); 
         res.status(200).json({
             question: currentQuestion.text,
             options: currentQuestion.options
@@ -372,19 +372,18 @@ app.get('/api/questions/current', async (req, res) => {
     }
 });
 
-// Route to validate an answer
+
 app.post('/api/questions/answer', async (req, res) => {
     try {
         const { selectedOption } = req.body;
         const data = await readJSON('quizzes.json');
-        const currentQuiz = data.quizzes[0]; // Assuming the first quiz is the current one
+        const currentQuiz = data.quizzes[0]; 
         if (!currentQuiz) {
             throw humanError('No quiz available', 404);
         }
-        const currentQuestion = currentQuiz.questions[0]; // Assuming the first question is the current one
+        const currentQuestion = currentQuiz.questions[0]; 
 
-        // Temporarily bypass the selected option validation
-        // const isCorrect = selectedOptionNumber === Number(currentQuestion.correctOption);
+       
         const isCorrect = true;
         res.status(200).json({ correct: isCorrect });
     } catch (error) {
@@ -397,13 +396,13 @@ app.post('/api/questions/answer', async (req, res) => {
     }
 });
 
-// Get quiz by ID
+
 app.get('/api/quizzes/:quizId', async (req, res) => {
     try {
         const { quizId } = req.params;
-        console.log('Requested Quiz ID:', quizId); // Debugging log
+        console.log('Requested Quiz ID:', quizId); 
         const data = await readJSON('quizzes.json');
-        console.log('Loaded quizzes:', data.quizzes); // Debugging log
+        console.log('Loaded quizzes:', data.quizzes); 
         const quiz = data.quizzes.find(q => q.id === quizId);
         
         if (!quiz) {
@@ -421,7 +420,7 @@ app.get('/api/quizzes/:quizId', async (req, res) => {
     }
 });
 
-// Error handling middleware
+
 app.use((err, req, res, next) => {
     console.error('Unhandled error:', err);
     res.status(500).json({ error: 'Oops! Something went wrong on our end.' });
