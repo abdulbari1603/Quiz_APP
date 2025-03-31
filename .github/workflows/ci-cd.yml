@@ -27,6 +27,12 @@ jobs:
           npm ci
           npm install -g mocha
 
+      - name: Snyk Security Scan
+        run: |
+          npm install -g snyk
+          snyk auth ${{ secrets.SNYK_TOKEN }}
+          snyk test 
+
       - name: Run Backend Tests
         run: npm test
         env:
