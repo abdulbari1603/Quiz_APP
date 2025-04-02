@@ -1,0 +1,56 @@
+{
+  "quizzes": [
+    {
+      "id": "0436bca316d2e19c",
+      "title": "New Quiz",
+      "questions": [
+        {
+          "text": "What is your favorite color?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdAt": "2025-04-02T06:12:17.715Z",
+      "updatedAt": "2025-04-02T06:12:17.715Z"
+    },
+    {
+      "id": "498708831efb5a9f",
+      "title": "New Quiz",
+      "questions": [
+        {
+          "text": "What is your favorite color?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow"
+          ],
+          "correctOption": 1
+        }
+      ],
+      "createdAt": "2025-04-02T06:12:17.751Z",
+      "updatedAt": "2025-04-02T06:12:17.751Z"
+    },
+    {
+      "id": "e98306edb8b08047",
+      "title": "Updated Quiz",
+      "questions": [
+        {
+          "text": "Updated Question?",
+          "options": [
+            "Option 1",
+            "Option 2"
+          ],
+          "correctOption": 0
+        }
+      ],
+      "createdAt": "2025-04-02T06:12:37.449Z",
+      "updatedAt": "2025-04-02T06:12:37.515Z"
+    }
+  ]
+}
