@@ -1,0 +1,598 @@
+{
+  "id": "c09a889c-1d6d-41c7-bcee-1f945265afe1",
+  "version": "2.0",
+  "name": "Quiz APP Test",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "e0183c70-047e-4b6c-bff6-3fecb173077d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "791049fe-e096-4d76-977a-e62b22864d1a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e73a2374-9c2e-406f-aaf3-d47b0af3441a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93572414-5913-493e-82a1-db8fa8384231",
+      "comment": "",
+      "command": "click",
+      "target": "id=quizTitle",
+      "targets": [
+        ["id=quizTitle", "id"],
+        ["css=#quizTitle", "css:finder"],
+        ["xpath=//input[@id='quizTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa77876c-6933-49f2-bb9d-f2a8b88bf692",
+      "comment": "",
+      "command": "type",
+      "target": "id=quizTitle",
+      "targets": [
+        ["id=quizTitle", "id"],
+        ["css=#quizTitle", "css:finder"],
+        ["xpath=//input[@id='quizTitle']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "4c1eec13-f0f1-43a5-8e78-596d6248a3c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-text",
+      "targets": [
+        ["css=.question-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4a964c8-9a76-4dfe-9f1a-d4e2c512b49c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-text",
+      "targets": [
+        ["css=.question-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc1a9bf3-7054-4b4b-8073-d65746715574",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-text",
+      "targets": [
+        ["css=.question-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "w"
+    }, {
+      "id": "e02a5b0e-949c-4e55-ae39-6a609882c083",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(1) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(1) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5564e3a-3fb6-4fb9-acbe-c1d2bd13b3ac",
+      "comment": "",
+      "command": "type",
+      "target": "css=.option-group:nth-child(1) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(1) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "d"
+    }, {
+      "id": "2e9228b7-e64b-4056-b726-50e81fd44ddc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(2) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(2) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d4a536f-8a8b-4fbb-9afd-ff5d7f3835d1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.option-group:nth-child(2) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(2) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "c"
+    }, {
+      "id": "351be114-ed08-44a2-933c-72affa357ff7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(3) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(3) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1499e2-719a-469b-b470-dbcdb63aad9e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.option-group:nth-child(3) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(3) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "h"
+    }, {
+      "id": "0f578da8-6a98-4a5c-a7bb-5cf5937d5edf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(4) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(4) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[4]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a96a4b7c-bc4d-4888-91ac-314de983e423",
+      "comment": "",
+      "command": "type",
+      "target": "css=.option-group:nth-child(4) > .option-text",
+      "targets": [
+        ["css=.option-group:nth-child(4) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[4]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": "v"
+    }, {
+      "id": "a847f413-8f16-4724-b17d-f86a1dbc372a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(3) > input:nth-child(1)",
+      "targets": [
+        ["css=.option-group:nth-child(3) > input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@name='correct-1'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e24eb9-9369-47ae-90b8-c9ef32223d53",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//button[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24b5fad6-e85b-4c88-b84c-d64282b9d138",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(7) .text-blue-500 > .h-5",
+      "targets": [
+        ["css=.border:nth-child(7) .text-blue-500 > .h-5", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "34754461-112f-4f4b-85ce-b779a9bca4a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.option-group:nth-child(2) > input:nth-child(1)",
+      "targets": [
+        ["css=.option-group:nth-child(2) > input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@name='correct-1'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "204ef65c-7da5-4e6a-915a-e003415deb90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-indigo-500",
+      "targets": [
+        ["css=.bg-indigo-500", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Question')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d816720-cdd0-48be-912b-3fb80fde3133",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bg-indigo-500",
+      "targets": [
+        ["css=.bg-indigo-500", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Question')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2d91629-de8c-4906-8c05-5015d7d458c0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.bg-indigo-500",
+      "targets": [
+        ["css=.bg-indigo-500", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Question')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e20046d0-4e7e-427b-aa9c-5fb5b43c31a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) > .question-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) > .question-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20b85d2d-58b1-48e7-b572-fc4efb9c753d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-container:nth-child(2) > .question-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) > .question-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "q"
+    }, {
+      "id": "7ea573ac-c8cf-49fe-9028-9a68657af719",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(1) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(1) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aba610f-a801-49f7-821f-21de296a8894",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(1) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(1) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input[2]", "xpath:position"]
+      ],
+      "value": "d"
+    }, {
+      "id": "3c30e64d-d8af-4025-b038-a4c3cde291c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(2) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(2) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aaf9366-9107-42b3-a6d4-dc96298e0481",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(2) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(2) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input[2]", "xpath:position"]
+      ],
+      "value": "f"
+    }, {
+      "id": "297b4b05-f65b-4298-aa09-f08ca4dca206",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(3) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(3) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6717cdb9-c619-4372-9697-9f4cde249fa7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(3) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(3) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[10]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/input[2]", "xpath:position"]
+      ],
+      "value": "c"
+    }, {
+      "id": "1e60246f-042b-4db6-b337-d3b55bf9da13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(4) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(4) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[4]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d80f2ac-6dc0-4a78-ba7b-3069d819f92a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(4) > .option-text",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(4) > .option-text", "css:finder"],
+        ["xpath=(//input[@type='text'])[11]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[4]/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[4]/input[2]", "xpath:position"]
+      ],
+      "value": "v"
+    }, {
+      "id": "fa9e754d-eb69-45f2-b1ac-11c8cd8bba98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.question-container:nth-child(2) .option-group:nth-child(4) > input:nth-child(1)",
+      "targets": [
+        ["css=.question-container:nth-child(2) .option-group:nth-child(4) > input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@name='correct-2'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='questions']/div[2]/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27913c32-b91d-467c-ac2b-16d4725fe641",
+      "comment": "",
+      "command": "click",
+      "target": "id=submitButton",
+      "targets": [
+        ["id=submitButton", "id"],
+        ["css=#submitButton", "css:finder"],
+        ["xpath=//button[@id='submitButton']", "xpath:attributes"],
+        ["xpath=//form[@id='quizForm']/button[2]", "xpath:idRelative"],
+        ["xpath=//form/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab5ff019-9fa7-438f-9b36-6d8e8f4414cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focus\\3Aring-green-500",
+      "targets": [
+        ["css=.focus\\3Aring-green-500", "css:finder"],
+        ["xpath=//button[@onclick='showStudentView()']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Student')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f0e89f1-f6d0-4438-b46c-2e8af3b0e20f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(7) > .mt-4",
+      "targets": [
+        ["css=.border:nth-child(7) > .mt-4", "css:finder"],
+        ["xpath=//button[@onclick=\"startQuiz('40e32ad9685ac7b8')\"]", "xpath:attributes"],
+        ["xpath=//div[@id='quizList']/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9259fed3-a985-46aa-ac14-5aeadf2562c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=studentNameInput",
+      "targets": [
+        ["id=studentNameInput", "id"],
+        ["css=#studentNameInput", "css:finder"],
+        ["xpath=//input[@id='studentNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='nameModal']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d86eaa32-6ce9-4afa-ad79-71bfbb7a4e93",
+      "comment": "",
+      "command": "type",
+      "target": "id=studentNameInput",
+      "targets": [
+        ["id=studentNameInput", "id"],
+        ["css=#studentNameInput", "css:finder"],
+        ["xpath=//input[@id='studentNameInput']", "xpath:attributes"],
+        ["xpath=//div[@id='nameModal']/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "r"
+    }, {
+      "id": "e0500820-68ee-42a1-aa2e-621888b79760",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-500:nth-child(2)",
+      "targets": [
+        ["css=.bg-blue-500:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='confirmName()']", "xpath:attributes"],
+        ["xpath=//div[@id='nameModal']/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//body/div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80da34cd-d53e-408c-807c-4d9c78adb451",
+      "comment": "",
+      "command": "click",
+      "target": "id=q0o0",
+      "targets": [
+        ["id=q0o0", "id"],
+        ["name=answer-0", "name"],
+        ["css=#q0o0", "css:finder"],
+        ["xpath=//input[@id='q0o0']", "xpath:attributes"],
+        ["xpath=//form[@id='quizAttemptForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e51c22-9475-470e-a1ae-c776687571fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=q1o2",
+      "targets": [
+        ["id=q1o2", "id"],
+        ["css=#q1o2", "css:finder"],
+        ["xpath=//input[@id='q1o2']", "xpath:attributes"],
+        ["xpath=//form[@id='quizAttemptForm']/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a9e25d8-daab-4a67-bf56-0271b5d5ca28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full:nth-child(3)",
+      "targets": [
+        ["css=.w-full:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='quizAttemptForm']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a5bfc4c-5598-4611-b55c-753b61d83480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-500:nth-child(4)",
+      "targets": [
+        ["css=.bg-blue-500:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@onclick='showStudentView()'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='quizList']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back to Quizzes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37925ceb-01d6-47fb-a97a-d9550251b540",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-purple-500",
+      "targets": [
+        ["css=.bg-purple-500", "css:finder"],
+        ["xpath=//button[@onclick='showResultsView()']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6177c300-2f98-4783-b0ac-b1f1bbc46b4a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bg-purple-500",
+      "targets": [
+        ["css=.bg-purple-500", "css:finder"],
+        ["xpath=//button[@onclick='showResultsView()']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09f79e89-374b-4886-8f3d-eaf2e0ca03f9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.bg-purple-500",
+      "targets": [
+        ["css=.bg-purple-500", "css:finder"],
+        ["xpath=//button[@onclick='showResultsView()']", "xpath:attributes"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c35f7d-c345-4d9c-aa8c-3497c27a80ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-blue-500:nth-child(1)",
+      "targets": [
+        ["css=.bg-blue-500:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='showTeacherView()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Teacher')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "274e1171-f405-4be2-8c1c-d5d58aee38bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(7) .text-red-500 path",
+      "targets": [
+        ["css=.border:nth-child(7) .text-red-500 path", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f2b29be1-7db4-4769-a595-687e47ebccc3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e0183c70-047e-4b6c-bff6-3fecb173077d"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
